@@ -95,7 +95,7 @@ class ZiruHome(object):
 
     def save(self, data):
         db = pymysql.connect(host='localhost', port=3306,
-                             db='pengwei', user='pengwei', password='pengwei')
+                             db='pengwei', user='pengwei', password='pengwei')#这里的账号，密码，数据库是输入你自己的，如果没有数据库，可以删除，保存为别的数据格式
         cursor = db.cursor()
         cursor.execute(
             """ INSERT into ziru value(%s, %s, %s, %s, %s, %s)"""
